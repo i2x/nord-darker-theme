@@ -2,143 +2,135 @@
   "name": "RxNordic Theme",
   "colors": {
     "editor.background": "#242933",
-    "editor.foreground": "#c0c8d8",
-    "activityBarBadge.background": "#191d24",
-    "sideBarTitle.foreground": "#bbbbbb",
-    "titleBar.activeBackground": "#191d24",
+    "activityBarBadge.background": "#242933",
+    "tab.activeBackground": "#242933",
+    "tab.inactiveBackground": "#191d24",
+    "panel.border": "#191d24",
     "activityBar.background": "#242933",
     "sideBar.background": "#242933",
+    "statusBar.background": "#191d24",
+    "editor.foreground": "#D8DEE9",
+    "sideBarTitle.foreground": "#D8DEE9",
+    "titleBar.activeBackground": "#191d24",
     "sideBar.border": "#191d24",
     "activityBar.border": "#191d24",
-    "tab.activeBackground": "#242933",
-    "tab.inactiveBackground": "#1d222a",
-    "tab.activeBorder": "#191d24",
     "editorGroupHeader.tabsBackground": "#191d24",
-    "statusBar.background": "#191d24"
   },
-"tokenColors": [
-
-  // 🟠 คำสั่งเฉพาะเจาะจง เช่น function, class, const
-  {
-    "name": "Function keyword (function, class, const)",
-    "scope": [
-      "storage.type.function"
-    ],
-    "settings": {
-      "foreground": "#d08770"
+  "tokenColors": [
+    // 🟠 คำสั่งเฉพาะเจาะจง เช่น function, class, const
+    {
+      "name": "Function keyword (function, class, const)",
+      "scope": [
+        "storage.type.function"
+      ],
+      "settings": {
+        "foreground": "#d08770"
+      }
+    },
+    // 🔑 คำสั่งภาษาอื่น ๆ เช่น if, for, return
+    {
+      "name": "General Keywords",
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#81a1c1"
+      }
+    },
+    // 💬 คอมเมนต์
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#5C6370",
+        "fontStyle": "italic"
+      }
+    },
+    // 🧵 สตริง
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#a3be8c"
+      }
+    },
+    // 🔢 ตัวเลข
+    {
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#be9db8"
+      }
+    },
+    // 🎯 ค่าคงที่ เช่น true / null / undefined
+    {
+      "scope": "constant",
+      "settings": {
+        "foreground": "#E06C75"
+      }
+    },
+    // 🟣 ตัวแปรทั่วไป
+    {
+      "scope": "variable",
+      "settings": {
+        "foreground": "#c0c8d8"
+      }
+    },
+    // 🧭 พารามิเตอร์ของฟังก์ชัน
+    {
+      "scope": "variable.parameter",
+      "settings": {
+        "foreground": "#bf616a"
+      }
+    },
+    // 🔧 ชื่อฟังก์ชัน
+    {
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#81a1c1"
+      }
+    },
+    // 🧩 ชื่อชนิดข้อมูล / class
+    {
+      "scope": "entity.name.type",
+      "settings": {
+        "foreground": "#ebcb8b"
+      }
+    },
+    // 🧱 เครื่องหมาย เช่น {}, (), [], , ; :
+    {
+      "scope": "punctuation",
+      "settings": {
+        "foreground": "#c0c8d8"
+      }
+    },
+    // ⚡ เครื่องหมายคำนวณ เช่น + - * / = => ===
+    {
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#c0c8d8"
+      }
+    },
+    {
+      "name": "HTML Tag Names",
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "#81a1c1"
+      }
+    },
+    // 💡 ชื่อ attribute เช่น href, className (HTML, JSX)
+    {
+      "name": "Attribute Names (HTML/JSX)",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "#ebcb8b"
+      }
+    },
+    // 🧩 Key ใน object เช่น { name: 'value' }
+    {
+      "name": "Object Keys (JS-like)",
+      "scope": [
+        "meta.object-literal.key",
+        "support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#ebcb8b"
+      }
     }
-  },
-
-  // 🔑 คำสั่งภาษาอื่น ๆ เช่น if, for, return
-  {
-    "name": "General Keywords",
-    "scope": "keyword",
-    "settings": {
-      "foreground": "#81a1c1"
-    }
-  },
-
-  // 💬 คอมเมนต์
-  {
-    "scope": "comment",
-    "settings": {
-      "foreground": "#5C6370",
-      "fontStyle": "italic"
-    }
-  },
-
-  // 🧵 สตริง
-  {
-    "scope": "string",
-    "settings": {
-      "foreground": "#a3be8c"
-    }
-  },
-
-  // 🔢 ตัวเลข
-  {
-    "scope": "constant.numeric",
-    "settings": {
-      "foreground": "#be9db8"
-    }
-  },
-
-  // 🎯 ค่าคงที่ เช่น true / null / undefined
-  {
-    "scope": "constant",
-    "settings": {
-      "foreground": "#E06C75"
-    }
-  },
-
-  // 🟣 ตัวแปรทั่วไป
-  {
-    "scope": "variable",
-    "settings": {
-      "foreground": "#c0c8d8"
-    }
-  },
-
-  // 🧭 พารามิเตอร์ของฟังก์ชัน
-  {
-    "scope": "variable.parameter",
-    "settings": {
-      "foreground": "#bf616a"
-    }
-  },
-
-  // 🔧 ชื่อฟังก์ชัน
-  {
-    "scope": "entity.name.function",
-    "settings": {
-      "foreground": "#81a1c1"
-    }
-  },
-
-  // 🧩 ชื่อชนิดข้อมูล / class
-  {
-    "scope": "entity.name.type",
-    "settings": {
-      "foreground": "#ebcb8b"
-    }
-  },
-
-  // 🧱 เครื่องหมาย เช่น {}, (), [], , ; :
-  {
-    "scope": "punctuation",
-    "settings": {
-      "foreground": "#c0c8d8"
-    }
-  },
-
-  // ⚡ เครื่องหมายคำนวณ เช่น + - * / = => ===
-  {
-    "scope": "keyword.operator",
-    "settings": {
-      "foreground": "#c0c8d8"
-    }
-  },
-
-  // 💡 ชื่อ attribute เช่น href, className (HTML, JSX)
-  {
-    "name": "Attribute Names (HTML/JSX)",
-    "scope": "entity.other.attribute-name",
-    "settings": {
-      "foreground": "#ebcb8b"
-    }
-  },
-
-  // 🧩 Key ใน object เช่น { name: 'value' }
-  {
-    "name": "Object Keys (JS-like)",
-    "scope": [
-      "meta.object-literal.key",
-      "support.type.property-name"
-    ],
-    "settings": {
-      "foreground": "#ebcb8b"
-    }
-  }
-]
-
+  ]
 }
